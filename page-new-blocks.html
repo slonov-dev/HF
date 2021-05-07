@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Sectors</title>
+    <title>Page About</title>
     <meta name="theme-color" content="#c9e0e04d">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
@@ -25,11 +25,15 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- preload-img -->
+    <link rel="preload" href="img/animation-about/balls-right.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-about/balls-left.png" as="image" media="(max-width: 2600px)">
+    <link rel="preload" href="img/animation-about/single-ball.png" as="image" media="(max-width: 2600px)">
+    <!-- preload-img -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Oswald:wght@500&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body>
@@ -37,7 +41,7 @@
 
 
     <!-- burger -->
-    <header class="header">
+    <div class="header">
         <div class="container">
             <div class='header__body'>
                 <div class='header__burger'>
@@ -56,8 +60,7 @@
                     <ul class='header__list'>
 
                         <li class=''>
-                            <a href='https://slonov-dev.github.io/HF/index.html'
-                                class='header__link header__link_main'>
+                            <a href='https://slonov-dev.github.io/HF/index.html' class='header__link header__link_main'>
                                 <span class="link-hover ">Home</span>
                             </a>
                         </li>
@@ -114,12 +117,11 @@
                     </div>
 
                     <div class="header__lang-choise lang-choise">
-                        <a class="lang-choise__link"
-                            href="https://slonov-dev.github.io/HF/fr/page-sectors.html">
+                        <a class="lang-choise__link" href="https://slonov-dev.github.io/HF/fr/page-about.html">
                             FR
                         </a>
-                        <a class="lang-choise__link  lang-choise__link_active"
-                            href="https://slonov-dev.github.io/HF/page-sectors.html">
+                        <a class="lang-choise__link lang-choise__link_active"
+                            href="https://slonov-dev.github.io/HF/page-about.html">
                             EN
                         </a>
                     </div>
@@ -130,13 +132,13 @@
             <!-- body -->
 
         </div>
-    </header>
+    </div>
     <!-- burger -->
 
     <main class="main">
 
         <div class="container-fluid">
-            <div class="first-page-bg first-page-bg_sectors first-page-bg_lines">
+            <div class="first-page-bg first-page-bg_about first-page-bg_lines">
                 <div class="container">
 
                     <!-- first-page -->
@@ -150,13 +152,12 @@
                             <div class="first-page__item">
                                 <!-- title -->
                                 <h1
-                                    class="first-page__title  first-page__title_sectors animate__animated animate__fadeInUp animate__delay-1s">
-                                    HighFi expertise
-
+                                    class="first-page__title first-page__title_about  animate__animated animate__fadeInUp animate__delay-1s">
+                                    new blocks
                                 </h1>
                                 <!-- btn -->
                                 <a class="btn main-btn main-btn_page-main-bt animate__animated animate__fadeIn  animate__delay-1s"
-                                    href="https://slonov-dev.github.io/HF/fr/page-news.html ">
+                                    href="https://slonov-dev.github.io/HF/page-news.html">
                                     our news
                                 </a>
                             </div>
@@ -167,370 +168,353 @@
                             <!-- item -->
                         </div>
                     </div>
-                </div>
-
-
-                <div class="">
-                    <img class="sectors-animation sectors-animation_1 animate__animated animate__fadeInDown animate__delay-3s"
-                        src="img/animation-sectors/cube-sm-left.png" alt="">
 
                 </div>
+                <!-- container -->
 
-                <img class="sectors-animation sectors-animation_2 animate__animated animate__fadeInLeft animate__delay-2s"
-                    src="img/animation-sectors/cube-sm-right.png" alt="">
+                <img class="about-animation about-animation_1 animate__animated animate__zoomInRight animate__delay-2s"
+                    src="img/animation-about/balls-right.png" alt="">
 
-                <img class="sectors-animation sectors-animation_3 animate__animated animate__fadeInLeft animate__delay-2s"
-                    src="img/animation-sectors/cubes-left.png" alt="">
+                <img class="about-animation about-animation_2 animate__animated animate__zoomInLeft animate__delay-2s"
+                    src="img/animation-about/balls-left.png" alt="">
 
-
-                <img class="sectors-animation sectors-animation_4 animate__animated animate__fadeInRight animate__delay-2s"
-                    src="img/animation-sectors/cubes-right.png" alt="">
-
-
-                <!-- mob -->
-                <img class="sectors-animation sectors-animation_5 animate__animated animate__fadeInDown animate__delay-2s"
-                    src="img/animation-sectors/cubes-right-mob.png" alt="">
+                <img class="about-animation about-animation_3  animate__animated animate__zoomInUp animate__delay-3s"
+                    src="img/animation-about/single-ball.png" alt="">
 
 
-                <img class="sectors-animation sectors-animation_6 animate__animated animate__fadeInDown animate__delay-2s"
-                    src="img/animation-sectors/cubes-right-bottom-mob.png" alt="">
-
-                <img class="sectors-animation sectors-animation_7 animate__animated animate__fadeInDown animate__delay-2s"
-                    src="img/animation-sectors/cubes-left-mob.png" alt="">
 
 
 
 
             </div>
         </div>
+
+
+
+
+
+
+
+
 
         <div class="container-fluid">
-            <div class="section-traingle">
-                <section class="composition">
-                    <div class="container">
-                        <div class="composition__inner">
-                            <div class="composition__title">THREE STRUCTURES FOR A COMPLETE OFFER
-                            </div>
-                            <div class="composition__img">
-                                <img src="img/bg/triangle-bg.png" alt="">
-
-                                <div class="composition__list">
-
-                                    <div class="composition-card composition-card_1">
-                                        <div class="composition-card__inner">
-                                            <div class="composition-card__img">
-                                                <span>
-
-                                                </span>
-                                            </div>
-                                            <div class="composition-card__title">HIGHFI</div>
-                                            <div class="composition-card__text composition-card__text_1">C
-
-                                                Historical company with a majority presence in the areas
-                                                of corporate and specialized investment banking MOE, MOA and digital
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="composition-card composition-card_2">
-                                        <div class="composition-card__inner">
-                                            <div class="composition-card__img">
-                                                <span>
-
-                                                </span>
-                                            </div>
-                                            <div class="composition-card__title">NORMASYS</div>
-                                            <div class="composition-card__text composition-card__text_2">
-
-                                                Integrated into the group in 2018, it consolidates our presence in the
-                                                retail banking business and brings us a presence in the insurance
-                                                business
-
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="composition-card composition-card_3">
-                                        <div class="composition-card__inner">
-
-                                            <div class="composition-card__img">
-                                                <span>
-
-                                                </span>
-                                            </div>
-                                            <div class="composition-card__title">HIGHSYS</div>
-                                            <div class="composition-card__text composition-card__text_3">
-
-                                                Created in 2016 and encompassing the infrastructure and
-                                                application production trades
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <img class="sectors-animation-tr sectors-animation-tr_2  animate__animated animate__zoomInUp animate__delay-1s"
-                        src="img/animation-about/single-ball.png" alt="">
-
-
-                </section>
-
-            </div>
-            <!-- triangle -->
-        </div>
-
-        <script>
-            let compositionCard_1 = document.querySelector(".composition-card_1");
-            let compositionCardText_1 = document.querySelector(
-                ".composition-card__text_1"
-            );
-            compositionCard_1.addEventListener("click", function () {
-                compositionCardText_1.classList.toggle("composition-card--active");
-            });
-
-            let compositionCard_2 = document.querySelector(".composition-card_2");
-            let compositionCardText_2 = document.querySelector(
-                ".composition-card__text_2"
-            );
-            compositionCard_2.addEventListener("click", function () {
-                compositionCardText_2.classList.toggle("composition-card--active");
-            });
-
-            let compositionCard_3 = document.querySelector(".composition-card_3");
-            let compositionCardText_3 = document.querySelector(
-                ".composition-card__text_3"
-            );
-            compositionCard_3.addEventListener("click", function () {
-                compositionCardText_3.classList.toggle("composition-card--active");
-            });
-        </script>
-
-        <div class="page__inner">
-
-            <div class="page__content">
-                <section class="sector">
-                    <div class="container">
-                        <div class="sector__inner">
-                            <h2 class="sector__title">
-                                Secteurs d’activites
+            <section class="section-about-group">
+                <div class="container">
+                    <div class="about-group">
+                        <div class="about-group__body wow animate__animated animate__zoomIn">
+                            <h2 class="about-group__title">
+                                HIGHFI GROUP
                             </h2>
-                            <div class="sector__list">
-                                <div class="sector-card">
-                                    <div class="sector-card__inner">
-                                        <div class="sector-card__header">
-                                            <div class="sector-card__title">BANKING & FINANCE</div>
-                                            <div class="sector-card__img">
-                                                <img src="img/icons/circle-btn.png" alt="">
-                                            </div>
 
+                            <a href="#" class="about-group__item about-group__item_1 wow animate__animated animate__zoomIn animate__delay-1s">
+                                <span>NormaSys</span>
+                            </a>
+                            <a href="#" class="about-group__item about-group__item_2  wow animate__animated animate__zoomIn animate__delay-1s">
+                                <span>HighFi</span>
+                            </a>
+                            <a href="#" class="about-group__item about-group__item_3  wow animate__animated animate__zoomIn animate__delay-1s">
+                                <span>HighSys</span>
+                            </a>
+                            <a href="#" class="about-group__item about-group__item_4  wow animate__animated animate__zoomIn animate__delay-1s">
+                                <span>Winexpert</span>
+                            </a>
+                            <a href="#" class="about-group__item about-group__item_5  wow animate__animated animate__zoomIn animate__delay-1s">
+                                <span>Soffit</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="card-about-group">
+                        <div class="card-about-group__body">
+                            <div class="card-about-group__item  wow animate__animated animate__fadeInUp">
+                                <div class="card-group">
+                                    <div class="card-group__header">
+                                        <div class="card-about-group__icon">
+                                            <img src="img/svg/icons/about-group/1.svg" alt="">
                                         </div>
-                                        <div class="sector-card__content ">
-                                            <div class="sector-card__text">
-                                                <p>
-                                                    Our banking consulting teams are there to help companies in their
-                                                    digital future by redesigning their critical applications,
-                                                    redefining their information systems and improving operational
-                                                    efficiency.
-                                                </p>
-                                                <p>
-                                                    We offer our services for all banking business lines :
-
-                                                </p>
-                                                <ul class="sector-card__list">
-                                                    <li>
-                                                        • Capital Market
-                                                    </li>
-                                                    <li>
-                                                        • Asset Management
-                                                    </li>
-                                                    <li>
-                                                        • Corporate Finance
-                                                    </li>
-                                                    <li>
-                                                        • Retail banking
-                                                    </li>
-                                                    <li>
-                                                        • Commodities trading
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
+                                        <h3 class="card-about-group__h3">
+                                            HighFi
+                                        </h3>
                                     </div>
-
+                                    <div class="card-group__text">
+                                        <p class="card-group__p">
+                                            Founded in 2002, Highfi is an engineering & finance consulting company with
+                                            a long-term vision and an ambition for excellence
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="sector-card">
-                                    <div class="sector-card__inner">
-                                        <div class="sector-card__header">
-                                            <div class="sector-card__title">INSURANCE AND MUTUALS</div>
-                                            <div class="sector-card__img">
-                                                <img src="img/icons/circle-btn.png" alt="">
-                                            </div>
+                            </div>
 
+                            <div class="card-about-group__item  wow animate__animated animate__fadeInUp">
+                                <div class="card-group">
+                                    <div class="card-group__header">
+                                        <div class="card-about-group__icon">
+                                            <img src="img/svg/icons/about-group/2.svg" alt="">
                                         </div>
-                                        <div class="sector-card__content ">
-                                            <div class="sector-card__text">
-                                                <p>
-                                                    Since 2018, we have been supporting French insurers and mutual
-                                                    groups through the Insurance consulting team. Their mission is to
-                                                    help insurance professionals improve their strategic
-                                                    transformations, the implementation of FO / BO vendor solutions and
-                                                    support on more agile methods.
-
-
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <h3 class="card-about-group__h3">
+                                            HIghsys
+                                        </h3>
                                     </div>
-
+                                    <div class="card-group__text">
+                                        <p class="card-group__p">
+                                            Created in 2016 and encompassing the trades of infrastructure and
+                                            application production
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="sector-card">
-                                    <div class="sector-card__inner">
-                                        <div class="sector-card__header">
-                                            <div class="sector-card__title">Public</div>
-                                            <div class="sector-card__img">
-                                                <img src="img/icons/circle-btn.png" alt="">
-                                            </div>
-
+                            </div>
+                            <div class="card-about-group__item  wow animate__animated animate__fadeInUp">
+                                <div class="card-group">
+                                    <div class="card-group__header">
+                                        <div class="card-about-group__icon">
+                                            <img src="img/svg/icons/about-group/3.svg" alt="">
                                         </div>
-                                        <div class="sector-card__content ">
-                                            <div class="sector-card__text">
-                                                <p>
-                                                    Public services are also changing, we are supporting clients such as
-                                                    Banque de France, BPI and the administrations to concretize their
-                                                    ideas for more innovative information systems, more efficient in
-                                                    data processing, more secure.
-
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <h3 class="card-about-group__h3">
+                                            Normasys
+                                        </h3>
                                     </div>
-
+                                    <div class="card-group__text">
+                                        <p class="card-group__p">
+                                            Integrated into the group in 2018, it consolidates our presence in the
+                                            retail banking businesses and brings us a presence in the insurance field
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="sector-card">
-                                    <div class="sector-card__inner">
-                                        <div class="sector-card__header">
-                                            <div class="sector-card__title">OTHER</div>
-                                            <div class="sector-card__img">
-                                                <img src="img/icons/circle-btn.png" alt="">
-                                            </div>
-
+                            </div>
+                            <div class="card-about-group__item  wow animate__animated animate__fadeInUp">
+                                <div class="card-group">
+                                    <div class="card-group__header">
+                                        <div class="card-about-group__icon">
+                                            <img src="img/svg/icons/about-group/4.svg" alt="">
                                         </div>
-                                        <div class="sector-card__content ">
-                                            <div class="sector-card__text">
-                                                <ul class="sector-card__list">
-                                                    <li>
-                                                        • Industry
-                                                    </li>
-                                                    <li>
-                                                        • Energy
-                                                    </li>
-                                                    <li>
-                                                        • Tourism
-                                                    </li>
-                                                    <li>
-                                                        • Media
-                                                    </li>
-                                                    <li>
-                                                        • Large-scale Distribution
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
+                                        <h3 class="card-about-group__h3">
+                                            Hf LAbs
+                                        </h3>
                                     </div>
-
+                                    <div class="card-group__text">
+                                        <p class="card-group__p">
+                                            Study, research and development of innovative projects. We are running
+                                            Blockchain, Artificial intelligence studies and development of startups
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-about-group__item  wow animate__animated animate__fadeInUp">
+                                <div class="card-group">
+                                    <div class="card-group__header">
+                                        <div class="card-about-group__icon">
+                                            <img src="img/svg/icons/about-group/5.svg" alt="">
+                                        </div>
+                                        <h3 class="card-about-group__h3">
+                                            Sofft
+                                        </h3>
+                                    </div>
+                                    <div class="card-group__text">
+                                        <p class="card-group__p">
+                                            Specialising on programming experts and IT environment, with presence in
+                                            Paris, Lyon and Strasbourg
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sector__bac-img">
-                        <img class="sectors-animation_8" src="img/bull_1.png" alt="bull">
-                    </div>
-                </section>
-
-
-            </div>
+                </div>
+            </section>
         </div>
+
+        <div class="container-fluid">
+            <section class="section-our-presence">
+                <div class="container">
+                    <div class="our-presence">
+                        <div class="our-presence__body">
+                            <div class="our-presence__item">
+                                <h2 class="our-presnce__title  wow animate__animated animate__fadeIn">
+                                    Our presence
+                                </h2>
+                                <div class="our-presnce-num  wow animate__animated animate__fadeInUp">
+                                    <div class="our-presnce-num__item">
+                                        <span class="our-presnce-num__num">
+                                            700
+                                        </span>
+                                        <span class="our-presnce-num__descr">
+                                            IT experts
+                                        </span>
+                                    </div>
+                                    <div class="our-presnce-num__item">
+                                        <span class="our-presnce-num__num">
+                                            70 M
+                                        </span>
+                                        <span class="our-presnce-num__descr">
+                                            revenue
+                                        </span>
+                                    </div>
+                                    <div class="our-presnce-num__item">
+                                        <span class="our-presnce-num__num">
+                                            4
+                                        </span>
+                                        <span class="our-presnce-num__descr">
+                                            sectors
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-presence__item  wow animate__animated animate__fadeInRight">
+                                <img src="img/svg/map.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
 
 
         <div class="container-fluid">
-            <div class="section-digital">
+            <section class="section-partners">
 
-                <section class="digitall">
-                    <div class="container">
-                        <div class="digitall__inner">
-                            <div class="digitall__title">RESEARCH DOMAINS<div class="digitall__title-img">
-                                    <a data-fancybox data-touch="false" href="#modal__digitall-card_5"
-                                        class="digitall__img" id="popupSwiper">
-                                        <span class="digitall__icon"></span>
-                                    </a>
-                                </div>
+                <div class="partners">
+                    <h2 class="partners__h2  wow animate__animated animate__fadeIn">
+                        our clients
+                    </h2>
+
+                    <div data-simplebar data-simplebar-auto-hide="false"
+                        class="patners__main-row wow animate__animated animate__fadeInUp animate__delay-1s overflow_x_bar">
+                        <div class="partners__row partners__row_1">
+                            <div class="partners__item">
+                                <img src="img/svg/partners/1.svg" alt="">
                             </div>
-                            <div class="digitall__list">
-                                <div class="digitall-card digitall-card_1">
-                                    <div class="digitall-card__inner">
-                                        <div class="digitall-card__title">BLOCKCHAIN</div>
-                                        <div class="digitall-card__img">
-                                            <a data-fancybox data-touch="false" href="#modal__digitall-card_1"
-                                                class="digitall__img">
-                                                <span class="digitall__icon"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="digitall-card digitall-card_2">
-                                    <div class="digitall-card__inner">
-                                        <div class="digitall-card__title">SUPPLY CHAIN</div>
-                                        <div class="digitall-card__img">
-                                            <a data-fancybox data-touch="false" href="#modal__digitall-card_2"
-                                                class="digitall__img">
-                                                <span class="digitall__icon"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="digitall-card digitall-card_3">
-                                    <div class="digitall-card__inner">
-                                        <div class="digitall-card__title">
-                                            ARTIFICIAL INTELLIGENCE
-                                        </div>
-                                        <div class="digitall-card__img">
-                                            <a data-fancybox data-touch="false" href="#modal__digitall-card_3"
-                                                class="digitall__img">
-                                                <span class="digitall__icon"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="digitall-card digitall-card_4">
-                                    <div class="digitall-card__inner">
-                                        <div class="digitall-card__title">POST COVID</div>
-                                        <div class="digitall-card__img">
-                                            <a data-fancybox data-touch="false" href="#modal__digitall-card_4"
-                                                class="digitall__img">
-                                                <span class="digitall__icon"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/2.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/3.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/4.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/5.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/6.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/7.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/8.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/9.svg" alt="">
                             </div>
                         </div>
+
+                        <div class="partners__row">
+                            <div class="partners__item">
+                                <img src="img/svg/partners/10.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/11.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/12.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/13.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/14.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/15.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/16.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/17.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/18.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/19.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/20.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="partners__row">
+                            <div class="partners__item">
+                                <img src="img/svg/partners/21.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/22.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/23.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/24.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/25.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/26.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/27.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/28.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="partners__row">
+                            <div class="partners__item">
+                                <img src="img/svg/partners/29.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/30.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/31.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/32.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/33.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/34.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/35.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/36.svg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="img/svg/partners/37.svg" alt="">
+                            </div>
+
+
+                        </div>
                     </div>
-                </section>
-
-            </div>
+                </div>
+            </section>
         </div>
-
 
     </main>
+
+
+
+
 
     <footer class="footer footer-animate container-fluid">
 
@@ -546,7 +530,7 @@
 
                     <div class="footer__link-div">
                         <a class="footer__link" href="#">
-                            Tél : +33 1 42 65 07 20
+                            Tel : +33 1 42 65 07 20
                         </a>
                         <br>
                         <a class="footer__link" href="#">
@@ -557,14 +541,15 @@
 
                 </div>
                 <div class="footer__item">
-                    HIGHFI, société d’ingénierie et de conseil en finance de marchés, dotée d'un véritable projet
-                    d'entreprise, une vison à long terme et une ambition d'exellence.
+                    HIGHFI, an engineering and consulting company in market finance, with a real project
+                    company, a long-term vision and an ambition for excellence.
                 </div>
             </div>
         </div>
 
         <div class="rules">
-            ©2020 HIGHFI. Tous droits réservés
+            ©2020 HIGHFI.
+            All rights reserved
         </div>
 
 
@@ -605,6 +590,7 @@
 
 
     <div class="js-offsetTopLeft run-num__item js-offsetTopRight"></div>
+
 
 
 
@@ -1701,9 +1687,12 @@
 
 
 
-
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.2/simplebar.min.js"
+    integrity="sha512-t5ONTEmbf892tq6YhM2eSBdDALGVbnQgqSy5fez2Dki/raOHJxKuf1DWSyHs8qvXoNDg2aJ9RdukRj0lRspfAw=="
+    crossorigin="anonymous"></script>
     <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
