@@ -328,6 +328,13 @@ $(document).ready(function () {
     $('.header__link_7').addClass('header__link_active');
   }
 });
+
+function hideAnimate() {
+  var aboutCircle = document.querySelector('.section-about-group');
+  aboutCircle.style.opacity = '1';
+}
+
+setTimeout(hideAnimate, 1000);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
