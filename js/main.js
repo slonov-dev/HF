@@ -300,31 +300,31 @@ document.addEventListener("scroll", function (e) {
 $(document).ready(function () {
   var href = location.href;
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/index.html') {
+  if (href == 'https://slonov-dev.github.io/HF/index.html') {
     $('.header__link_main').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-about.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-about.html') {
     $('.header__link_2').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-sectors.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-sectors.html') {
     $('.header__link_3').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-innovation.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-innovation.html') {
     $('.header__link_4').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-values.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-values.html') {
     $('.header__link_5').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-carriers.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-carriers.html') {
     $('.header__link_6').addClass('header__link_active');
   }
 
-  if (href == 'https://slonov-dev.github.io/HF/dist/page-news.html') {
+  if (href == 'https://slonov-dev.github.io/HF/page-news.html') {
     $('.header__link_7').addClass('header__link_active');
   }
 });

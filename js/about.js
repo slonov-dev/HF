@@ -295,7 +295,7 @@
 
       var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
 
-      if (w_top + 600 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+      if (w_top + 100 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
         $('.run-num__text_num').css('opacity', '1');
         $('.run-num__text_num').spincrement({
           thousandSeparator: "",

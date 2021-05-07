@@ -5381,7 +5381,7 @@ body {
 }
 
 .neon-ball__item_per {
-  transform: translate(68px, 50px);
+  transform: translate(88px, 50px);
 }
 
 .neon-ball__item_1 {
@@ -5658,6 +5658,8 @@ body {
 }
 
 .our-commitment__title {
+  position: relative;
+  z-index: 10;
   text-transform: uppercase;
   text-align: center;
 }
@@ -7374,6 +7376,177 @@ body {
   display: block;
 }
 
+.about-group {
+  position: relative;
+  z-index: 10;
+}
+
+.section-about-group {
+  padding: 100px 0;
+}
+
+.about-group__body {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  margin: 0 auto;
+  background-image: url(../img/svg/bg/about-group.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.about-group__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3BBEAA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.about-group__item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-decoration: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #3BBEAA;
+  color: #3BBEAA;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all .3s;
+}
+
+.about-group__item:hover {
+  background-color: #3BBEAA;
+  color: #fff;
+  border-color: #2f9787;
+}
+
+.about-group__item_1 {
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-group__item_2 {
+  top: 15%;
+  left: 5%;
+}
+
+.about-group__item_3 {
+  top: 15%;
+  right: 5%;
+}
+
+.about-group__item_4 {
+  bottom: 5%;
+  left: 12.5%;
+}
+
+.about-group__item_5 {
+  bottom: 5%;
+  right: 12.5%;
+}
+
+.card-about-group {
+  margin-top: 40px;
+}
+
+.card-about-group__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-about-group__item {
+  flex-basis: calc(33.333% - 20px);
+  margin: 10px;
+  background-color: #3BBEAA;
+}
+
+.card-group {
+  color: #fff;
+  padding: 30px;
+}
+
+.card-group__header {
+  display: flex;
+  align-items: center;
+}
+
+.card-about-group__h3 {
+  margin-left: 20px;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-group__text {
+  margin-top: 10px;
+}
+
+.section-our-presence {
+  padding: 60px 0;
+}
+
+.our-presence__body {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+}
+
+.our-presence__item:first-child {
+  flex-basis: 30%;
+}
+
+.our-presence__item:last-child {
+  flex-basis: 70%;
+}
+
+.our-presence__item:last-child img {
+  width: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.our-presnce__title {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.our-presnce-num {
+  margin-top: 70px;
+}
+
+.our-presnce-num__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.our-presnce-num__descr {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.our-presnce-num__num {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 123.5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #19E4D3;
+}
+
 .about-animation {
   position: absolute;
 }
@@ -7667,6 +7840,65 @@ body {
 .innovation-page__animation_5 {
   bottom: -30px;
   left: 30%;
+}
+
+.section-partners {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(94.46deg, #36EAC2 3.97%, #31E9C5 25.79%, #07E0DE 51.58%, #46EDB9 76.54%);
+}
+
+.partners {
+  position: relative;
+  z-index: 10;
+}
+
+.partners__h2 {
+  max-width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 123.5%;
+  /* or 43px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.partners__row {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.partners__row div {
+  flex-shrink: 0;
+}
+
+.partners__row div:not(:first-child) {
+  margin-left: 10px;
+}
+
+.partners__row_1 {
+  margin-top: 60px;
+}
+
+.partners__item:last-child {
+  margin-right: 20px;
+}
+
+.partners__item:first-child {
+  margin-left: 20px;
+}
+
+.partners__item img {
+  transition: all .3s;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .header {
@@ -8336,7 +8568,6 @@ body {
 .run-num__text_num {
   font-size: 32px;
   font-weight: 100;
-  opacity: 0;
 }
 
 .section-clients {
@@ -9154,6 +9385,14 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .our-presence__body {
+    align-items: center;
+  }
+
+  .our-presnce-num {
+    margin-top: 40px;
+  }
+
   .innovation-page__animation {
     position: absolute;
   }
@@ -9460,6 +9699,32 @@ body {
     opacity: 1;
   }
 
+  .about-group__body {
+    width: 100%;
+    height: 500px;
+  }
+
+  .about-group__item {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-about-group__body {
+    flex-direction: column;
+  }
+
+  .card-about-group__item {
+    margin: 0;
+  }
+
+  .card-about-group__item:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .card-about-group__icon img {
+    width: 60px;
+  }
+
   .about-animation_6 {
     display: none;
   }
@@ -9557,6 +9822,23 @@ body {
     display: block;
     right: -5%;
     top: 40%;
+  }
+
+  .section-partners {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .partners__row_1 {
+    margin-top: 60px;
+  }
+
+  .partners__item:last-child {
+    margin-right: 0px;
+  }
+
+  .partners__item:first-child {
+    margin-left: 0px;
   }
 
   .header__link {
@@ -10070,6 +10352,26 @@ body {
     color: #ffffff;
   }
 
+  .our-presence__body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .our-presnce-num {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .our-presnce-num__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .our-presence__item:last-child {
+    margin-top: 40px;
+  }
+
   .borderspacing th {
     padding: 3px;
     font-size: 7px;
@@ -10574,6 +10876,45 @@ body {
   .carriers-choise__link {
     font-size: 11px;
     text-align: center;
+  }
+
+  .about-group__body {
+    width: 100%;
+    height: 350px;
+  }
+
+  .about-group__item {
+    width: 90px;
+    height: 90px;
+    font-size: 1rem;
+  }
+
+  .about-group__title {
+    font-size: 1.2rem;
+  }
+
+  .section-about-group {
+    padding: 40px 0;
+  }
+
+  .our-presnce-num__num {
+    font-size: 42px;
+  }
+
+  .our-presnce-num__descr {
+    font-size: 14px;
+  }
+
+  .our-presnce-num {
+    justify-content: space-between;
+  }
+
+  .section-our-presence {
+    padding: 40px 0;
+  }
+
+  .our-presnce-num {
+    margin-top: 20px;
   }
 
   .header__logo img {
