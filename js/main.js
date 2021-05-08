@@ -676,6 +676,116 @@ setTimeout(parallaxFooterInit(), 1000);
 
 /***/ }),
 
+/***/ "./src/blocks/modules/parallax/parallax-infrastructure.js":
+/*!****************************************************************!*\
+  !*** ./src/blocks/modules/parallax/parallax-infrastructure.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function parallaxInfrastructureInit() {
+  var infrastructureAnimation_1 = document.querySelector(".infrastructure-animation_1");
+  new simpleParallax(infrastructureAnimation_1, {
+    orientation: 'down',
+    overflow: true,
+    delay: .9,
+    scale: 1.6,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_2 = document.querySelector(".infrastructure-animation_2");
+  new simpleParallax(infrastructureAnimation_2, {
+    orientation: 'left',
+    overflow: true,
+    delay: .7,
+    scale: 1.4,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_3 = document.querySelector(".infrastructure-animation_3");
+  new simpleParallax(infrastructureAnimation_3, {
+    orientation: 'down right',
+    overflow: true,
+    delay: .9,
+    scale: 1.6,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_4 = document.querySelector(".infrastructure-animation_4");
+  new simpleParallax(infrastructureAnimation_4, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_5 = document.querySelector(".infrastructure-animation_5");
+  new simpleParallax(infrastructureAnimation_5, {
+    orientation: 'down left',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_6 = document.querySelector(".infrastructure-animation_6");
+  new simpleParallax(infrastructureAnimation_6, {
+    orientation: 'top right',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+} //del animate class
+
+
+var infrastructureAnimation_1 = document.querySelector(".infrastructure-animation_1");
+
+if (infrastructureAnimation_1) {
+  infrastructureAnimation_1.addEventListener('animationend', function () {
+    infrastructureAnimation_1.classList.remove('animate__animated', 'animate__zoomInRight', 'animate__delay-2s');
+  });
+}
+
+var infrastructureAnimation_2 = document.querySelector(".infrastructure-animation_2");
+
+if (infrastructureAnimation_2) {
+  infrastructureAnimation_2.addEventListener('animationend', function () {
+    infrastructureAnimation_2.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__delay-2s');
+  });
+}
+
+var infrastructureAnimation_3 = document.querySelector(".infrastructure-animation_3");
+
+if (infrastructureAnimation_3) {
+  infrastructureAnimation_3.addEventListener('animationend', function () {
+    infrastructureAnimation_3.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-3s');
+  });
+}
+
+var infrastructureAnimation_4 = document.querySelector(".infrastructure-animation_4");
+
+if (infrastructureAnimation_4) {
+  infrastructureAnimation_4.addEventListener('animationend', function () {
+    infrastructureAnimation_4.classList.remove('animate__animated', 'animate__zoomInUp');
+    setTimeout(parallaxInfrastructureInit, 1500);
+  });
+}
+
+var infrastructureAnimation_5 = document.querySelector(".infrastructure-animation_5");
+
+if (infrastructureAnimation_5) {
+  infrastructureAnimation_5.addEventListener('animationend', function () {
+    infrastructureAnimation_5.classList.remove('animate__animated', 'animate__zoomInLeft');
+  });
+}
+
+var infrastructureAnimation_6 = document.querySelector(".infrastructure-animation_6");
+
+if (infrastructureAnimation_6) {
+  infrastructureAnimation_6.addEventListener('animationend', function () {
+    infrastructureAnimation_6.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/parallax/parallax-innovation.js":
 /*!************************************************************!*\
   !*** ./src/blocks/modules/parallax/parallax-innovation.js ***!
@@ -1575,19 +1685,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_parallax_parallax_values__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_values__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/parallax/parallax-innovation */ "./src/blocks/modules/parallax/parallax-innovation.js");
 /* harmony import */ var _modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_innovation__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/sections/sections */ "./src/blocks/modules/sections/sections.js");
-/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
-/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
-/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
-/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_parallax_parallax_infrastructure__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/parallax/parallax-infrastructure */ "./src/blocks/modules/parallax/parallax-infrastructure.js");
+/* harmony import */ var _modules_parallax_parallax_infrastructure__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_parallax_parallax_infrastructure__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/sections/sections */ "./src/blocks/modules/sections/sections.js");
+/* harmony import */ var _modules_sections_sections__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_sections_sections__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/clients/clients */ "./src/blocks/modules/clients/clients.js");
+/* harmony import */ var _modules_clients_clients__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_clients_clients__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/our-commitment/our-commitment */ "./src/blocks/modules/our-commitment/our-commitment.js");
+/* harmony import */ var _modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_our_commitment_our_commitment__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_14__);
 //parallax
+
 
 
 
