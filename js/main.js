@@ -339,8 +339,30 @@ if (aboutCircle) {
 }
 
 $('.card-group__header').click(function () {
+  $('.card-group__arrow-wrap').css({
+    'backgroundColor': '#2FEECB',
+    'opacity': '0'
+  });
+  $(this).find('.card-group__arrow-wrap').css({
+    'backgroundColor': '#2FEECB',
+    'opacity': '1'
+  });
+  $('.card-group__arrow-wrap svg').css({
+    'transform': 'translate(-50%, -50%) rotate(0)'
+  });
+  $(this).find('.card-group__arrow-wrap svg').css({
+    'transform': 'translate(-50%, -50%) rotate(180deg)'
+  });
+
   if ($(this).next().is(":visible")) {
     $(this).next().hide('slow');
+    $('.card-group__arrow-wrap svg').css({
+      'transform': 'translate(-50%, -50%) rotate(0)'
+    });
+    $('.card-group__arrow-wrap').css({
+      'backgroundColor': '#2FEECB',
+      'opacity': '0'
+    });
   } else {
     $('.card-group__text:visible').hide('slow');
     $(this).next().show('slow');
