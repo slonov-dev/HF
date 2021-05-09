@@ -554,7 +554,7 @@ var aboutAnimation_7 = document.querySelector(".about-animation_7");
 
 if (aboutAnimation_7) {
   aboutAnimation_7.addEventListener('animationend', function () {
-    aboutAnimation_7.classList.remove('animate__animated', 'animate__zoomIn');
+    aboutAnimation_7.classList.remove('animate__animated', 'animate__fadeInBottomLeft');
   });
 }
 
@@ -562,7 +562,7 @@ var aboutAnimation_8 = document.querySelector(".about-animation_8");
 
 if (aboutAnimation_8) {
   aboutAnimation_8.addEventListener('animationend', function () {
-    aboutAnimation_8.classList.remove('animate__animated', 'animate__zoomIn');
+    aboutAnimation_8.classList.remove('animate__animated', 'animate__fadeInBottomRight');
   });
 }
 
@@ -570,7 +570,7 @@ var aboutAnimation_9 = document.querySelector(".about-animation_9");
 
 if (aboutAnimation_9) {
   aboutAnimation_9.addEventListener('animationend', function () {
-    aboutAnimation_9.classList.remove('animate__animated', 'animate__zoomIn');
+    aboutAnimation_9.classList.remove('animate__animated', 'animate__fadeInTopLeft');
   });
 }
 
@@ -578,7 +578,7 @@ var aboutAnimation_10 = document.querySelector(".about-animation_10");
 
 if (aboutAnimation_10) {
   aboutAnimation_10.addEventListener('animationend', function () {
-    aboutAnimation_10.classList.remove('animate__animated', 'animate__zoomIn');
+    aboutAnimation_10.classList.remove('animate__animated', 'animate__fadeInBottomRight');
   });
 }
 
@@ -586,7 +586,7 @@ var aboutAnimation_11 = document.querySelector(".about-animation_11");
 
 if (aboutAnimation_11) {
   aboutAnimation_11.addEventListener('animationend', function () {
-    aboutAnimation_11.classList.remove('animate__animated', 'animate__zoomIn');
+    aboutAnimation_11.classList.remove('animate__animated', 'animate__fadeInBottomLeft');
   });
 }
 
