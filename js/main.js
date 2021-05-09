@@ -328,13 +328,24 @@ $(document).ready(function () {
     $('.header__link_7').addClass('header__link_active');
   }
 });
+var aboutCircle = document.querySelector('.section-about-group');
 
-function hideAnimate() {
-  var aboutCircle = document.querySelector('.section-about-group');
-  aboutCircle.style.opacity = '1';
+if (aboutCircle) {
+  var hideAnimate = function hideAnimate() {
+    aboutCircle.style.opacity = '1';
+  };
+
+  setTimeout(hideAnimate, 1000);
 }
 
-setTimeout(hideAnimate, 1000);
+$('.card-group__header').click(function () {
+  if ($(this).next().is(":visible")) {
+    $(this).next().hide('slow');
+  } else {
+    $('.card-group__text:visible').hide('slow');
+    $(this).next().show('slow');
+  }
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -423,6 +434,47 @@ function parallaxAboutInit() {
     delay: 1.6,
     scale: 1.8,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  }); //circle
+
+  var aboutAnimation_7 = document.querySelector(".about-animation_7");
+  new simpleParallax(aboutAnimation_7, {
+    orientation: 'down left',
+    overflow: true,
+    delay: 1.2,
+    scale: 2,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var aboutAnimation_8 = document.querySelector(".about-animation_8");
+  new simpleParallax(aboutAnimation_8, {
+    orientation: 'up left',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var aboutAnimation_9 = document.querySelector(".about-animation_9");
+  new simpleParallax(aboutAnimation_9, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var aboutAnimation_10 = document.querySelector(".about-animation_10");
+  new simpleParallax(aboutAnimation_10, {
+    orientation: 'down left',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var aboutAnimation_11 = document.querySelector(".about-animation_11");
+  new simpleParallax(aboutAnimation_11, {
+    orientation: 'up right',
+    overflow: true,
+    delay: 1.6,
+    scale: 1.8,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
 } //del animate class
 
@@ -465,6 +517,54 @@ var aboutAnimation_5 = document.querySelector(".about-animation_5");
 if (aboutAnimation_5) {
   aboutAnimation_5.addEventListener('animationend', function () {
     aboutAnimation_5.classList.remove('animate__animated', 'animate__zoomInUp');
+  });
+}
+
+var aboutAnimation_6 = document.querySelector(".about-animation_6");
+
+if (aboutAnimation_6) {
+  aboutAnimation_6.addEventListener('animationend', function () {
+    aboutAnimation_6.classList.remove('animate__animated', 'animate__zoomInUp');
+  });
+}
+
+var aboutAnimation_7 = document.querySelector(".about-animation_7");
+
+if (aboutAnimation_7) {
+  aboutAnimation_7.addEventListener('animationend', function () {
+    aboutAnimation_7.classList.remove('animate__animated', 'animate__zoomIn');
+  });
+}
+
+var aboutAnimation_8 = document.querySelector(".about-animation_8");
+
+if (aboutAnimation_8) {
+  aboutAnimation_8.addEventListener('animationend', function () {
+    aboutAnimation_8.classList.remove('animate__animated', 'animate__zoomIn');
+  });
+}
+
+var aboutAnimation_9 = document.querySelector(".about-animation_9");
+
+if (aboutAnimation_9) {
+  aboutAnimation_9.addEventListener('animationend', function () {
+    aboutAnimation_9.classList.remove('animate__animated', 'animate__zoomIn');
+  });
+}
+
+var aboutAnimation_10 = document.querySelector(".about-animation_10");
+
+if (aboutAnimation_10) {
+  aboutAnimation_10.addEventListener('animationend', function () {
+    aboutAnimation_10.classList.remove('animate__animated', 'animate__zoomIn');
+  });
+}
+
+var aboutAnimation_11 = document.querySelector(".about-animation_11");
+
+if (aboutAnimation_11) {
+  aboutAnimation_11.addEventListener('animationend', function () {
+    aboutAnimation_11.classList.remove('animate__animated', 'animate__zoomIn');
   });
 }
 
@@ -713,7 +813,7 @@ function parallaxInfrastructureInit() {
     orientation: 'down right',
     overflow: true,
     delay: 1.2,
-    scale: 1.5,
+    scale: 1.2,
     transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
   });
   var infrastructureAnimation_5 = document.querySelector(".infrastructure-animation_5");
@@ -727,6 +827,46 @@ function parallaxInfrastructureInit() {
   var infrastructureAnimation_6 = document.querySelector(".infrastructure-animation_6");
   new simpleParallax(infrastructureAnimation_6, {
     orientation: 'top right',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_7 = document.querySelector(".infrastructure-animation_7");
+  new simpleParallax(infrastructureAnimation_7, {
+    orientation: 'down',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_8 = document.querySelector(".infrastructure-animation_8");
+  new simpleParallax(infrastructureAnimation_8, {
+    orientation: 'down',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_9 = document.querySelector(".infrastructure-animation_9");
+  new simpleParallax(infrastructureAnimation_9, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_10 = document.querySelector(".infrastructure-animation_10");
+  new simpleParallax(infrastructureAnimation_10, {
+    orientation: 'down right',
+    overflow: true,
+    delay: 1.2,
+    scale: 1.5,
+    transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)'
+  });
+  var infrastructureAnimation_11 = document.querySelector(".infrastructure-animation_11");
+  new simpleParallax(infrastructureAnimation_11, {
+    orientation: 'down right',
     overflow: true,
     delay: 1.2,
     scale: 1.5,
@@ -764,7 +904,7 @@ var infrastructureAnimation_4 = document.querySelector(".infrastructure-animatio
 if (infrastructureAnimation_4) {
   infrastructureAnimation_4.addEventListener('animationend', function () {
     infrastructureAnimation_4.classList.remove('animate__animated', 'animate__zoomInUp');
-    setTimeout(parallaxInfrastructureInit, 1500);
+    setTimeout(parallaxInfrastructureInit, 500);
   });
 }
 
@@ -781,6 +921,46 @@ var infrastructureAnimation_6 = document.querySelector(".infrastructure-animatio
 if (infrastructureAnimation_6) {
   infrastructureAnimation_6.addEventListener('animationend', function () {
     infrastructureAnimation_6.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+var infrastructureAnimation_7 = document.querySelector(".infrastructure-animation_7");
+
+if (infrastructureAnimation_7) {
+  infrastructureAnimation_7.addEventListener('animationend', function () {
+    infrastructureAnimation_7.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+var infrastructureAnimation_8 = document.querySelector(".infrastructure-animation_8");
+
+if (infrastructureAnimation_8) {
+  infrastructureAnimation_8.addEventListener('animationend', function () {
+    infrastructureAnimation_8.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+var infrastructureAnimation_9 = document.querySelector(".infrastructure-animation_9");
+
+if (infrastructureAnimation_9) {
+  infrastructureAnimation_9.addEventListener('animationend', function () {
+    infrastructureAnimation_9.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+var infrastructureAnimation_10 = document.querySelector(".infrastructure-animation_10");
+
+if (infrastructureAnimation_10) {
+  infrastructureAnimation_10.addEventListener('animationend', function () {
+    infrastructureAnimation_10.classList.remove('animate__animated', 'animate__zoomInRight');
+  });
+}
+
+var infrastructureAnimation_11 = document.querySelector(".infrastructure-animation_11");
+
+if (infrastructureAnimation_11) {
+  infrastructureAnimation_11.addEventListener('animationend', function () {
+    infrastructureAnimation_11.classList.remove('animate__animated', 'animate__zoomInRight');
   });
 }
 
