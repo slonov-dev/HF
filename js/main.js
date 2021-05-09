@@ -875,6 +875,12 @@ function parallaxInfrastructureInit() {
 } //del animate class
 
 
+var pageInf = document.querySelector('.page-infrastructure-animation');
+
+if (pageInf) {
+  setTimeout(parallaxInfrastructureInit, 500);
+}
+
 var infrastructureAnimation_1 = document.querySelector(".infrastructure-animation_1");
 
 if (infrastructureAnimation_1) {
@@ -904,7 +910,6 @@ var infrastructureAnimation_4 = document.querySelector(".infrastructure-animatio
 if (infrastructureAnimation_4) {
   infrastructureAnimation_4.addEventListener('animationend', function () {
     infrastructureAnimation_4.classList.remove('animate__animated', 'animate__zoomInUp');
-    setTimeout(parallaxInfrastructureInit, 500);
   });
 }
 
