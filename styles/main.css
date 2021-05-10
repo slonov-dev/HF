@@ -7796,6 +7796,8 @@ body {
 
 .soft-dev__item {
   flex-basis: 50%;
+  position: relative;
+  z-index: 10;
 }
 
 .soft-dev__item:last-child img {
@@ -8531,7 +8533,7 @@ body {
   cursor: pointer;
   color: #fff;
   text-shadow: white 1px 0 10px;
-  letter-spacing: .55px;
+  letter-spacing: .25px;
 }
 
 .header__link:hover::after {
@@ -8953,6 +8955,10 @@ body {
   flex-basis: 50%;
 }
 
+.left-text-img {
+  margin-left: 50px;
+}
+
 .left-text-content {
   display: inline-block;
 }
@@ -8981,6 +8987,10 @@ body {
 
 .left-text-content__text {
   margin-top: 2rem;
+}
+
+.soft-dev__item_approach {
+  margin-right: 50px;
 }
 
 .right-text {
@@ -11875,6 +11885,10 @@ body {
 
   .left-text-content__title {
     font-size: 18px;
+  }
+
+  .soft-dev__item_approach {
+    margin-right: 0;
   }
 
   .right-text-content__title {
