@@ -348,16 +348,16 @@ $('.card-group__header').click(function () {
     'opacity': '1'
   });
   $('.card-group__arrow-wrap svg').css({
-    'transform': 'translate(-50%, -50%) rotate(0)'
+    'transform': 'translate(-50%, -50%) rotate(180deg)'
   });
   $(this).find('.card-group__arrow-wrap svg').css({
-    'transform': 'translate(-50%, -50%) rotate(180deg)'
+    'transform': 'translate(-50%, -50%) rotate(0deg)'
   });
 
   if ($(this).next().is(":visible")) {
     $(this).next().hide('slow');
     $('.card-group__arrow-wrap svg').css({
-      'transform': 'translate(-50%, -50%) rotate(0)'
+      'transform': 'translate(-50%, -50%) rotate(180deg)'
     });
     $('.card-group__arrow-wrap').css({
       'backgroundColor': '#2FEECB',
