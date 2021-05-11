@@ -5867,14 +5867,18 @@ body {
 
 .page-values {
   background-position: center;
-  background-image: url(../img/bg/section-values-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .worth {
+  padding-top: 80px;
   position: relative;
   height: 1140px;
+}
+
+.worth h2 {
+  text-align: center;
 }
 
 .worth__inner {
@@ -5976,7 +5980,6 @@ body {
 .worth-card {
   position: absolute;
   z-index: 2;
-  background-color: #eceaf5;
 }
 
 .worth-card__title {
@@ -6796,7 +6799,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 25px;
   border-radius: 50%;
 }
@@ -6807,8 +6810,6 @@ body {
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 60px;
 }
 
 .hint-card__link {
@@ -8635,6 +8636,11 @@ body {
   margin-left: 1.5rem;
 }
 
+.header__link_sub {
+  transform: translateX(50px);
+  display: inline-block;
+}
+
 .carriers-form-wrap {
   position: relative;
   z-index: 20;
@@ -9870,7 +9876,6 @@ body {
   .worth-card {
     position: relative;
     display: block;
-    background-color: #eceaf5;
     left: inherit;
     right: inherit;
     top: inherit;
@@ -11854,6 +11859,10 @@ body {
   .infrastructure-animation_4-data {
     max-width: 260px !important;
     right: -50px !important;
+  }
+
+  .header__link_sub {
+    transform: translateX(25px);
   }
 
   .header__logo img {
