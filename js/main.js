@@ -368,6 +368,21 @@ $('.card-group__header').click(function () {
     $(this).next().show('slow');
   }
 });
+$('.header__link_submenu').click(function () {
+  $(this).find('.submenu__arrow-wrap svg').css({
+    'transform': 'rotate(0deg)'
+  });
+
+  if ($(this).next().is(":visible")) {
+    $(this).next().hide('slow');
+    $('.submenu__arrow-wrap svg').css({
+      'transform': ' rotate(180deg)'
+    });
+  } else {
+    $('.submenu:visible').hide('slow');
+    $(this).next().show('slow');
+  }
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
