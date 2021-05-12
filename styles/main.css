@@ -8524,6 +8524,8 @@ body {
 }
 
 .header__link {
+  display: flex;
+  align-items: center;
   position: relative;
   transition: all .25s;
   text-decoration: none;
