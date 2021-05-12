@@ -8681,6 +8681,51 @@ body {
   letter-spacing: .25px;
 }
 
+.header__link_submenu:hover::after {
+  transform: scale(1.1) translateX(calc(-100% - 20px)) translateY(-50%);
+  opacity: 1;
+}
+
+.header__link_submenu::after {
+  content: '';
+  position: absolute;
+  width: 990px;
+  left: 0;
+  top: 50%;
+  overflow: hidden;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform .25s, opacity 1.25s;
+}
+
+.header__link_submenu_active {
+  position: relative;
+  margin-left: 25px;
+}
+
+.header__link_submenu_active:after {
+  display: none;
+}
+
+.header__link_submenu_active::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 990px;
+  bottom: 50%;
+  left: 0;
+  transform: translateX(calc(-100% - 40px)) translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .25s;
+}
+
+.header__link_submenu_active:hover::before {
+  background-color: #fff;
+  transform: translateX(calc(-100% - 120px)) translateY(-50%);
+}
+
 .submenu__arrow-wrap {
   flex-shrink: 0;
   margin-left: 10px;
