@@ -8965,18 +8965,10 @@ body {
 
 .first-page__title {
   color: #fff;
-  font-size: 95px;
+  font-size: 85px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-}
-
-.first-page__title_about {
-  font-size: 75px;
-}
-
-.first-page__title_sectors {
-  font-size: 65px;
 }
 
 .first-page__animation {
@@ -12203,12 +12195,7 @@ body {
   }
 
   .first-page__title {
-    font-size: 42px;
-  }
-
-  .first-page__title_sectors {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 35px;
   }
 }
 
